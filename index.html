@@ -156,7 +156,7 @@
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block">NTT Human Informatics Laboratories, NTT, Inc.</span>
+              <span class="author-block">Human Informatics Laboratories, NTT, Inc.</span>
             </div>
             
           </div>
@@ -206,10 +206,11 @@
           <br>
           <br>
 
-          <h2 class="title is-4" style="font-weight: 700;">Comparison</h2>
+          <h2 class="title is-4" style="font-weight: 700;">Quantitative Comparison</h2>
           <div class="content has-text-justified">
             <p>
               When camera configurations during testing are different from those during training, MV2GF achieves significantly better detection performance than previous state-of-the-art methods.
+              All models are trained on GMVD-D training split.
             </p>
           </div>
           <div class="content has-text-centered">
@@ -218,6 +219,7 @@
           <div class="content has-text-justified">
             <p>
               Even when camera configurations during testing are identical to those during training, MV2GF achieves detection performance comparable to that of previous state-of-the-art methods.
+              All models are trained on the training split of the same dataset used for testing.
             </p>
           </div>
           <div class="content has-text-centered">
@@ -225,6 +227,26 @@
           </div>
           <br>
           <br>
+
+          <h2 class="title is-4" style="font-weight: 700;">Qualitative Comparison</h2>
+          <div class="content has-text-justified">
+            <p>
+              MV2GF reduces both false positives and false negatives compared to MSMVD on GMVD-D.
+            </p>
+          </div>
+          <div class="content has-text-centered">
+            <img id="gmvd_img" src="images/result_gmvd.png">
+          </div>
+
+          <h2 class="title is-4" style="font-weight: 700;">Comparison of BEV features</h2>
+          <div class="content has-text-justified">
+            <p>
+              MV2GF exhibits fewer distortions around pedestrians than MVFP and precisely represents pedestrian locations.
+            </p>
+          </div>
+          <div class="content has-text-centered">
+            <img id="feature_img" src="images/feature.png">
+          </div>
           
         </div>
       </div>
